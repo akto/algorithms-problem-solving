@@ -6,3 +6,4 @@ My solutions to some easy to complex problems and challanges.
 3. [Check for Palindrome - JS code for checking the palindromes](https://github.com/akto/algorithms-problem-solving/blob/master/check-for-palindrome.js)
 4. [Factorialize - JS code for returning the result of a factorial function.](https://github.com/akto/algorithms-problem-solving/blob/master/factorial.js)
 5. [Length of the Longest Word - JS code for returning length of the longest word in a sentence](https://github.com/akto/algorithms-problem-solving/blob/master/length-of-longest-word.js)
+6. [Title case of a phrase - JS code for making uppercase the first letter of every word in a sentence](https://github.com/akto/algorithms-problem-solving/blob/master/title-case.js)
