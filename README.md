@@ -7,4 +7,4 @@ My solutions to some easy to complex problems and challanges.
 4. [Factorialize - JS code for returning the result of a factorial function.](https://github.com/akto/algorithms-problem-solving/blob/master/factorial.js)
 5. [Length of the Longest Word - JS code for returning length of the longest word in a sentence](https://github.com/akto/algorithms-problem-solving/blob/master/length-of-longest-word.js)
 6. [Title case of a phrase - JS code for making uppercase the first letter of every word in a sentence](https://github.com/akto/algorithms-problem-solving/blob/master/title-case.js)
-7.[Return largest numbers in arrays -JS code to find the largest numbers in arrays](https://github.com/akto/algorithms-problem-solving/blob/master/return-largest-numbers-in-arrays.js)
+7.[Return largest numbers in arrays - JS code to find the largest numbers in arrays](https://github.com/akto/algorithms-problem-solving/blob/master/return-largest-numbers-in-arrays.js)
