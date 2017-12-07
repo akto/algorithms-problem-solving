@@ -10,3 +10,4 @@ My solutions to some easy to complex problems and challanges.
 7. [Return largest numbers in arrays - JS code to find the largest numbers in arrays](https://github.com/akto/algorithms-problem-solving/blob/master/return-largest-numbers-in-arrays.js)
 8. [Confirm ending - JS code to check if the given argument is the ending of the phrase](https://github.com/akto/algorithms-problem-solving/blob/master/confirm-ending.js)
 9. [Repeat a string - JS code to repeat the string in the array, given times](https://github.com/akto/algorithms-problem-solving/blob/master/repeat-a-sting.js)
+10. [Truncate string - JS code to truncate the string by given length](https://github.com/akto/algorithms-problem-solving/blob/master/truncate-string.js)
