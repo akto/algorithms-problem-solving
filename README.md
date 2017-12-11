@@ -12,6 +12,7 @@ My solutions to some easy to complex problems and challanges.
 9. [Repeat a string - JS code to repeat the string in the array, given times](https://github.com/akto/algorithms-problem-solving/blob/master/repeat-a-sting.js)
 10. [Truncate string - JS code to truncate the string by given length](https://github.com/akto/algorithms-problem-solving/blob/master/truncate-string.js)
 11. [Chunk the array - JS code to chunk the array given length](https://github.com/akto/algorithms-problem-solving/blob/master/chunk-array.js)
+12. [Chopping off the array - JS code to chop off the array from nth element-return the remaining part of the array](https://github.com/akto/algorithms-problem-solving/blob/master/chopping-off-the-array.js)
 
 ...
 
