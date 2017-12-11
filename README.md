@@ -20,6 +20,6 @@ My solutions to some easy to complex problems and challanges.
 100. [Convert characters to htmlentities - JS code to convert special characters to htmlentities](https://github.com/akto/algorithms-problem-solving/blob/master/convert-char-to-htmlentities.js)
 
 ...
-#adventofcode.com's challanges
+# adventofcode.com's challanges
 
 1. [Accumulator of the similarities - JS code to find the sum of the values that are similar with the next ones](https://github.com/akto/algorithms-problem-solving/blob/master/accumulator-the-similarities-of-an-array.js)
