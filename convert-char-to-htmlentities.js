@@ -4,7 +4,7 @@ function convertHTML(str) {
 }
 
 function replacer( match, r1, r2, r3, r4, r5, offset, string ){
-    console.log('Matched substring: '+match+' - '+ characters[match]);
+    //console.log('Matched substring: '+match+' - '+ characters[match]);
     return characters[match];
 }
 
