@@ -17,6 +17,7 @@ My solutions to some easy to complex problems and challanges.
 12. [Chopping off the array - JS code to chop off the array from nth element-return the remaining part of the array](https://github.com/akto/algorithms-problem-solving/blob/master/chopping-off-the-array.js)
 13. [Array in array - JS code to check if first element of array consist all letters in the second element of array](https://github.com/akto/algorithms-problem-solving/blob/master/array-in-array.js)
 14. [Falsy bouncer - JS code to find falsy values in js, Falsy values in JavaScript are false, null, 0, "", undefined, and NaN.](https://github.com/akto/algorithms-problem-solving/blob/master/falsy-bouncer.js)
+15. [Seek and Destroy - JS code to remove arguments from the inital array](https://github.com/akto/algorithms-problem-solving/blob/master/seek-and-destroy.js)
 
 ...
 
