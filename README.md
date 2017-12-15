@@ -18,6 +18,7 @@ My solutions to some easy to complex problems and challanges.
 13. [Array in array - JS code to check if first element of array consist all letters in the second element of array](https://github.com/akto/algorithms-problem-solving/blob/master/array-in-array.js)
 14. [Falsy bouncer - JS code to find falsy values in js, Falsy values in JavaScript are false, null, 0, "", undefined, and NaN.](https://github.com/akto/algorithms-problem-solving/blob/master/falsy-bouncer.js)
 15. [Seek and Destroy - JS code to remove arguments from the inital array](https://github.com/akto/algorithms-problem-solving/blob/master/seek-and-destroy.js)
+16. [Where does it belong - JS code to find the index of second argument inside of the first argument.](https://github.com/akto/algorithms-problem-solving/blob/master/where-does-it-belong.js)
 
 ...
 
