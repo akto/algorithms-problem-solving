@@ -20,6 +20,7 @@ My solutions to some easy to complex problems and challanges.
 15. [Seek and Destroy - JS code to remove arguments from the inital array](https://github.com/akto/algorithms-problem-solving/blob/master/seek-and-destroy.js)
 16. [Where does it belong - JS code to find the index of second argument inside of the first argument.](https://github.com/akto/algorithms-problem-solving/blob/master/where-does-it-belong.js)
 17. [Ceasar Cipher - JS code to decode rot13 cipher](https://github.com/akto/algorithms-problem-solving/blob/master/ceasars-cipher.js)
+18. [Sum All Numbers in a Range - JS code to find the sum of all numbers in a range](https://github.com/akto/algorithms-problem-solving/blob/master/sum-all-numbers-in-a-range.js)
 
 ...
 
