@@ -21,7 +21,7 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 16. [Where does it belong - JS code to find the index of second argument inside of the first argument.](https://github.com/akto/algorithms-problem-solving/blob/master/where-does-it-belong.js)
 17. [Ceasar Cipher - JS code to decode rot13 cipher](https://github.com/akto/algorithms-problem-solving/blob/master/ceasars-cipher.js)
 18. [Sum All Numbers in a Range - JS code to find the sum of all numbers in a range](https://github.com/akto/algorithms-problem-solving/blob/master/sum-all-numbers-in-a-range.js)
-19. [Difference of Two Arrays - JS code to find differences of two array](https://github.com/akto/algorithms-problem-solving/blob/master/diffarance-of-two-arrays.js)
+19. [Difference of Two Arrays - JS code to find differences of two array](https://github.com/akto/algorithms-problem-solving/blob/master/differences-of-two-arrays.js)
 
 ...
 
