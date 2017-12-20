@@ -27,6 +27,7 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 
 99. [Uniting the unique - JS code to unite all the unique values in an array in the their occurance order](https://github.com/akto/algorithms-problem-solving/blob/master/unite-unique.js)
 100. [Convert characters to htmlentities - JS code to convert special characters to htmlentities](https://github.com/akto/algorithms-problem-solving/blob/master/convert-char-to-htmlentities.js)
+101. [Sum of All Odd Fibonacci Numbers - JS code to find the sum of the all odd numbers in a fibonacci sequence to given value](https://github.com/akto/algorithms-problem-solving/blob/master/sum-of-all-odd-fibonacci-sequence-to-given-value.js)
 
 
 ## Adventofcode.com challanges
