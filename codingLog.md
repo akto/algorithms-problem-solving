@@ -1,7 +1,7 @@
 # CODING LOG
 ## 2017
 
-- 20.12.2017
+- ### 20.12.2017
   - Today I applied to renew my passport and identity card. It was a busy morning. After that I need to deal with some task in the job.
   - My daily job takes a lot of time of me.
   - So I couldn't code much. But;
@@ -10,7 +10,7 @@
   - I almost finished the pomodoro clock but I decided to do it very simple firstly.
     because I need to learn and read more about js objects.
   - After first version I will improve the pomodoro clock eventually.
-  ### Pins of the day
+  #### Pins of the day
   - I like codrops collective. But I first to mention about [30 Seconds of Code](https://github.com/Chalarangelo/30-seconds-of-code). It has very nice code snippets.
   
 - 19.12.2017
