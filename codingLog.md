@@ -10,6 +10,8 @@
   - I almost finished the pomodoro clock but I decided to do it very simple firstly.
     because I need to learn and read more about js objects.
   - After first version I will improve the pomodoro clock eventually.
+  ### Pins of the day
+  - I like codrops collective. But I first to mention about [30 Seconds of Code](https://github.com/Chalarangelo/30-seconds-of-code). It has very nice code snippets.
   
 - 19.12.2017
   - I need to deal with my daily job tasks most of the day again.
