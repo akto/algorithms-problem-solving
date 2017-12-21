@@ -1,11 +1,19 @@
 # CODING LOG
 ## LOGGED AT
 ### 2017
+* [21.12.2017](#20122017)
 * [20.12.2017](#20122017)
 * [19.12.2017](#19122017)
 * [18.12.2017](#19122017)
 
 ## 2017
+
+- ### 21.12.2017
+  - I created [where-art-thou.js](https://github.com/akto/algorithms-problem-solving/blob/master/wherefore-art-thou.js).
+    It's a js code to looks through an array of objects (first argument) and returns an array of all objects that have matching property and value pairs
+  - I finished 2 videos on @freeCodeCamp.
+  #### Pins of the day
+  - I finished video 6-7-8 at [Computer Basics playlist](https://www.youtube.com/playlist?list=PLWKjhJtqVAbmfoj2Th9fvxhHIeqFO7wOy)
 
 - ### 20.12.2017
   - Today I applied to renew my passport and identity card. It was a busy morning. After that I need to deal with some task in the job.
