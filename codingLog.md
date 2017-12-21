@@ -9,7 +9,7 @@
 ## 2017
 
 - ### 21.12.2017
-  - I created [where-art-thou.js](https://github.com/akto/algorithms-problem-solving/blob/master/wherefore-art-thou.js).
+  - I created [`where-art-thou.js`](https://github.com/akto/algorithms-problem-solving/blob/master/wherefore-art-thou.js).
     It's a js code to looks through an array of objects (first argument) and returns an array of all objects that have matching property and value pairs
   - I finished 2 videos on @freeCodeCamp.
   - I solved an algorithm [Sum of the all prime numbers till given value `sum-of-all.js`](https://github.com/akto/algorithms-problem-solving/blob/master/sum-all-primes.js)
@@ -34,7 +34,7 @@
 - ### 19.12.2017
   - I need to deal with my daily job tasks most of the day again.
   - There is a meeting in the deparment about surveying. But at least I've created this log.
-  - I create [sum-all-numbers-in-a-range.js](https://github.com/akto/algorithms-problem-solving/blob/master/sum-all-numbers-in-a-range.js)
+  - I create [`sum-all-numbers-in-a-range.js`](https://github.com/akto/algorithms-problem-solving/blob/master/sum-all-numbers-in-a-range.js)
   - and I update the links in the README.md of Algorithms-problem-solving repository.
 
 - ### 18.12.2017
