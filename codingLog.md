@@ -20,6 +20,7 @@
   - I finished video 6-7-8 at [Computer Basics playlist](https://www.youtube.com/playlist?list=PLWKjhJtqVAbmfoj2Th9fvxhHIeqFO7wOy)
   - Check out [Dev Tips Video Channel](https://www.youtube.com/channel/UCyIe-61Y8C4_o-zZCtO4ETQ)
   - Check out to [contribute to the open source projects](https://github.com/freeCodeCamp/how-to-contribute-to-open-source)
+  - Check out - [The startups of Türkiye and which technology they use](https://github.com/frontendistanbul/technologies)
 
 - ### 20.12.2017
   - Today I applied to renew my passport and identity card. It was a busy morning. After that I need to deal with some task in the job.
