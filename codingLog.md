@@ -12,6 +12,7 @@
   - I created [where-art-thou.js](https://github.com/akto/algorithms-problem-solving/blob/master/wherefore-art-thou.js).
     It's a js code to looks through an array of objects (first argument) and returns an array of all objects that have matching property and value pairs
   - I finished 2 videos on @freeCodeCamp.
+  - I solved an algorithm [Sum of the all prime numbers till given value `sum-of-all.js`](https://github.com/akto/algorithms-problem-solving/blob/master/sum-all-primes.js)
   #### Pins of the day
   - I finished video 6-7-8 at [Computer Basics playlist](https://www.youtube.com/playlist?list=PLWKjhJtqVAbmfoj2Th9fvxhHIeqFO7wOy)
 
