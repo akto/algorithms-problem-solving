@@ -34,5 +34,6 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 
 ## Adventofcode.com challanges
 
-1. [Accumulator of the similarities - JS code to find the sum of the values that are similar with the next ones](https://github.com/akto/algorithms-problem-solving/blob/master/accumulator-the-similarities-of-an-array.js)
-2. [Accumulator of the similarities of two array - JS code to find the double sum of the similar values in similar index of two different arrays](https://github.com/akto/algorithms-problem-solving/blob/master/accumulator-of-similarities-of-two-array.js)
+1. [Accumulator of the similarities - JS code to find the sum of the values that are similar with the next ones](https://github.com/akto/algorithms-problem-solving/blob/master/advent-accumulator-the-similarities-of-an-array.js)
+2. [Accumulator of the similarities of two array - JS code to find the double sum of the similar values in similar index of two different arrays](https://github.com/akto/algorithms-problem-solving/blob/master/advent-accumulator-of-similarities-of-two-array.js)
+3. [Sum of differences of max and min values in rows](https://github.com/akto/algorithms-problem-solving/blob/master/advent-sum-of-diff-in-rows.js)
