@@ -23,6 +23,7 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 18. [Sum All Numbers in a Range - JS code to find the sum of all numbers in a range](https://github.com/akto/algorithms-problem-solving/blob/master/sum-all-numbers-in-a-range.js)
 19. [Difference of Two Arrays - JS code to find differences of two array](https://github.com/akto/algorithms-problem-solving/blob/master/differences-of-two-arrays.js)
 20. [Wherefore art thou - JS code to looks through an array of objects (first argument) and returns an array of all objects that have matching property and value pairs](https://github.com/akto/algorithms-problem-solving/blob/master/wherefore-art-thou.js)
+21. [Search and Replace - JS code to replace arguments with the provided values in the sentences](https://github.com/akto/algorithms-problem-solving/blob/master/search-and-replace.js)
 
 ...
 
