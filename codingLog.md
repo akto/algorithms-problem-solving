@@ -10,6 +10,7 @@
 ## 2017
 
 - ### 22.12.2017
+  - I created [`search-and-replace.js`](https://github.com/akto/algorithms-problem-solving/blob/master/search-and-replace.js). JS code to replace provided values with arguments in the sentences. It's a @freeodecamp algorithm challange.
   - I solved an adventofcode challange and create [`advent-sum-of-diff-in-rows.js`](https://github.com/akto/algorithms-problem-solving/blob/master/advent-sum-of-diff-in-rows.js). This script can be used to find accumulation of the sum of differences of max and min values in rows.
   - I'll use `advent-` prefix to indicate the scripts of solutions to [adventofcode.com](http://adventofcode.com) challanges. It's too late for @freeCodeCamp codes. 
   - In js to find the max value of an array. Array.reduce() can be used. When you return a or b in the reduce method it checks every value in the array with elaminate the min one of the two value. Such as -> ( [1,2,3,7,4,5,6] --> (1,2),(2) -> (2,3),(3) -> (3,7),(7) -> (7,4),(7) -> (7,5)(7) ....
