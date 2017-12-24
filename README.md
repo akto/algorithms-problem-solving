@@ -25,6 +25,7 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 20. [Wherefore art thou - JS code to looks through an array of objects (first argument) and returns an array of all objects that have matching property and value pairs](https://github.com/akto/algorithms-problem-solving/blob/master/wherefore-art-thou.js)
 21. [Search and Replace - JS code to replace arguments with the provided values in the sentences](https://github.com/akto/algorithms-problem-solving/blob/master/search-and-replace.js)
 22. [Pig Latin - JS code which takes the first consonant (or consonant cluster) of an English word, moves it to the end of the word and suffixes an "ay". If a word begins with a vowel you just add "way" to the end.](https://github.com/akto/algorithms-problem-solving/blob/master/pig-latin.js)
+23. [DNA Pairing - JS code to match DNA codes](https://github.com/akto/algorithms-problem-solving/blob/master/dna-pairing.js)
 
 ...
 
