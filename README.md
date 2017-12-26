@@ -26,6 +26,7 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 21. [Search and Replace - JS code to replace arguments with the provided values in the sentences](https://github.com/akto/algorithms-problem-solving/blob/master/search-and-replace.js)
 22. [Pig Latin - JS code which takes the first consonant (or consonant cluster) of an English word, moves it to the end of the word and suffixes an "ay". If a word begins with a vowel you just add "way" to the end.](https://github.com/akto/algorithms-problem-solving/blob/master/pig-latin.js)
 23. [DNA Pairing - JS code to match DNA codes](https://github.com/akto/algorithms-problem-solving/blob/master/dna-pairing.js)
+24. [Missing Letters - JS code to find missing letters in a letter sequence](https://github.com/akto/algorithms-problem-solving/blob/master/missing-letters.js)
 
 ...
 
