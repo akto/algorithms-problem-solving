@@ -27,6 +27,7 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 22. [Pig Latin - JS code which takes the first consonant (or consonant cluster) of an English word, moves it to the end of the word and suffixes an "ay". If a word begins with a vowel you just add "way" to the end.](https://github.com/akto/algorithms-problem-solving/blob/master/pig-latin.js)
 23. [DNA Pairing - JS code to match DNA codes](https://github.com/akto/algorithms-problem-solving/blob/master/dna-pairing.js)
 24. [Missing Letters - JS code to find missing letters in a letter sequence](https://github.com/akto/algorithms-problem-solving/blob/master/missing-letters.js)
+25. [Boo who - JS code to classify a value as boolean primitives](https://github.com/akto/algorithms-problem-solving/blob/master/boo-who.js)
 
 ...
 
