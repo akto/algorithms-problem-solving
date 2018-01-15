@@ -28,13 +28,11 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 23. [DNA Pairing - JS code to match DNA codes](https://github.com/akto/algorithms-problem-solving/blob/master/dna-pairing.js)
 24. [Missing Letters - JS code to find missing letters in a letter sequence](https://github.com/akto/algorithms-problem-solving/blob/master/missing-letters.js)
 25. [Boo who - JS code to classify a value as boolean primitives](https://github.com/akto/algorithms-problem-solving/blob/master/boo-who.js)
-
-...
-
-99. [Uniting the unique - JS code to unite all the unique values in an array in the their occurance order](https://github.com/akto/algorithms-problem-solving/blob/master/unite-unique.js)
-100. [Convert characters to htmlentities - JS code to convert special characters to htmlentities](https://github.com/akto/algorithms-problem-solving/blob/master/convert-char-to-htmlentities.js)
-101. [Sum of All Odd Fibonacci Numbers - JS code to find the sum of the all odd numbers in a fibonacci sequence to given value](https://github.com/akto/algorithms-problem-solving/blob/master/sum-of-all-odd-fibonacci-sequence-to-given-value.js)
-102. [Sum of all primes - JS code to find the sum of all prime numbers till the given value](https://github.com/akto/algorithms-problem-solving/blob/master/sum-all-primes.js)
+26. [Uniting the unique - JS code to unite all the unique values in an array in the their occurance order](https://github.com/akto/algorithms-problem-solving/blob/master/unite-unique.js)
+27. [Convert characters to htmlentities - JS code to convert special characters to htmlentities](https://github.com/akto/algorithms-problem-solving/blob/master/convert-char-to-htmlentities.js)
+28. [Spinal Tap Case]()
+29. [Sum of All Odd Fibonacci Numbers - JS code to find the sum of the all odd numbers in a fibonacci sequence to given value](https://github.com/akto/algorithms-problem-solving/blob/master/sum-of-all-odd-fibonacci-sequence-to-given-value.js)
+30. [Sum of all primes - JS code to find the sum of all prime numbers till the given value](https://github.com/akto/algorithms-problem-solving/blob/master/sum-all-primes.js)
 
 
 ## Adventofcode.com challanges
