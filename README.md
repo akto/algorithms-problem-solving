@@ -30,7 +30,7 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 25. [Boo who - JS code to classify a value as boolean primitives](https://github.com/akto/algorithms-problem-solving/blob/master/boo-who.js)
 26. [Uniting the unique - JS code to unite all the unique values in an array in the their occurance order](https://github.com/akto/algorithms-problem-solving/blob/master/unite-unique.js)
 27. [Convert characters to htmlentities - JS code to convert special characters to htmlentities](https://github.com/akto/algorithms-problem-solving/blob/master/convert-char-to-htmlentities.js)
-28. [Spinal Tap Case]()
+28. [Spinal Tap Case - JS code to convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.](https://github.com/akto/algorithms-problem-solving/blob/master/spinal-tap-case.js)
 29. [Sum of All Odd Fibonacci Numbers - JS code to find the sum of the all odd numbers in a fibonacci sequence to given value](https://github.com/akto/algorithms-problem-solving/blob/master/sum-of-all-odd-fibonacci-sequence-to-given-value.js)
 30. [Sum of all primes - JS code to find the sum of all prime numbers till the given value](https://github.com/akto/algorithms-problem-solving/blob/master/sum-all-primes.js)
 
