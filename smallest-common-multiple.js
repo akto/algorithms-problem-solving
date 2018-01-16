@@ -1,59 +1,38 @@
+/*
+I get this solution from https://stackoverflow.com/a/38360866/2839009
+It's very briliant solution. I firstly tried to count all divisions by an object. But this fits better.
+*/
+
 console.clear();
 function smallestCommons(arr) {
-  var arr1 = arrayer( arr );
-  var numbersNkeys = [];
-  arr1.map(function(i){
-    if( isPrime(i) ){ numbersNkeys.push( [i,1] ); numberNkey[i] = 1; }
-    var l = numbersNkeys[numbersNkeys.length-1][0],
-        j = 1;
-    while( j <= l ){
-        if( i%j == 0 ){ }
-        j++;
-    }
+  var arr1 = range( arr ),
+      min = Math.min(...arr),
+      scm = min;
+  arr1.map(function( i ){
+      scm = smallestMultiple( scm, i );
   });
-  console.log(  );
-  return arr;
+  //console.log(scm);
+  return scm;
 }
 
-var numberNkey = {
-  1 : 1
+function smallestMultiple( y, l ){
+  return ( y*l )/divider( y, l );
 }
 
-function maxArray( arr ){
-    return arr.reduce(function( a,b ){
-        return Math.max(a,b);
-    });
+function divider( y,l ){
+    return !l ? y : divider( l, y%l );
 }
 
-function isPrime( n ){
-  if( !( n%2 == 0 ? true : false ) ){ 
-    let nn = 3; // 3 because I want to elaminate 1 and self division
-    while( nn < n ){
-      if( n % nn == 0 ){ return false;}
-      nn += 2;
-    }
-    return true;
-  }else{
-    return false;
-  }
-}
-
-
-function arrayer( arr ){
-    var newArr = [],
-        small = smallest(arr),
-        diff = Math.abs( arr[1] - arr[0]),
+function range( arr ){
+    var nArr = [],
+        smallest = arr[0] < arr[1] ? arr[0] : arr[1],
+        diff = Math.abs( arr[1] - arr[0] ),
         i = 0;
     while( i <= diff ){
-        newArr.push( small+i );
+        nArr.push( smallest+i );
         i++;
     }
-    //console.log( newArr );
-    return newArr;
-}
-
-function smallest( arr ){
-    return arr[0] < arr[1] ? arr[0] : arr[1];
+    return nArr;
 }
 
 console.time();
