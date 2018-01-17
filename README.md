@@ -3,31 +3,31 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 
 ## Freecodecamp.com Challanges
 
-1. [Roman Numeral converter - JS code for converting Latin Numerals to Roman Numerals ](https://github.com/akto/algorithms-problem-solving/blob/master/roman-numeral-convertor.js)
-2. [Reverse a String - JS code for reversing a string](https://github.com/akto/algorithms-problem-solving/blob/master/reverse-a-string.js)
-3. [Check for Palindrome - JS code for checking the palindromes](https://github.com/akto/algorithms-problem-solving/blob/master/check-for-palindrome.js)
-4. [Factorialize - JS code for returning the result of a factorial function.](https://github.com/akto/algorithms-problem-solving/blob/master/factorial.js)
-5. [Length of the Longest Word - JS code for returning length of the longest word in a sentence](https://github.com/akto/algorithms-problem-solving/blob/master/length-of-longest-word.js)
-6. [Title case of a phrase - JS code for making uppercase the first letter of every word in a sentence](https://github.com/akto/algorithms-problem-solving/blob/master/title-case.js)
-7. [Return largest numbers in arrays - JS code to find the largest numbers in arrays](https://github.com/akto/algorithms-problem-solving/blob/master/return-largest-numbers-in-arrays.js)
-8. [Confirm ending - JS code to check if the given argument is the ending of the phrase](https://github.com/akto/algorithms-problem-solving/blob/master/confirm-ending.js)
-9. [Repeat a string - JS code to repeat the string in the array, given times](https://github.com/akto/algorithms-problem-solving/blob/master/repeat-a-sting.js)
-10. [Truncate string - JS code to truncate the string by given length](https://github.com/akto/algorithms-problem-solving/blob/master/truncate-string.js)
-11. [Chunk the array - JS code to chunk the array given length](https://github.com/akto/algorithms-problem-solving/blob/master/chunk-array.js)
-12. [Chopping off the array - JS code to chop off the array from nth element-return the remaining part of the array](https://github.com/akto/algorithms-problem-solving/blob/master/chopping-off-the-array.js)
-13. [Array in array - JS code to check if first element of array consist all letters in the second element of array](https://github.com/akto/algorithms-problem-solving/blob/master/array-in-array.js)
-14. [Falsy bouncer - JS code to find falsy values in js, Falsy values in JavaScript are false, null, 0, "", undefined, and NaN.](https://github.com/akto/algorithms-problem-solving/blob/master/falsy-bouncer.js)
-15. [Seek and Destroy - JS code to remove arguments from the inital array](https://github.com/akto/algorithms-problem-solving/blob/master/seek-and-destroy.js)
-16. [Where does it belong - JS code to find the index of second argument inside of the first argument.](https://github.com/akto/algorithms-problem-solving/blob/master/where-does-it-belong.js)
-17. [Ceasar Cipher - JS code to decode rot13 cipher](https://github.com/akto/algorithms-problem-solving/blob/master/ceasars-cipher.js)
-18. [Sum All Numbers in a Range - JS code to find the sum of all numbers in a range](https://github.com/akto/algorithms-problem-solving/blob/master/sum-all-numbers-in-a-range.js)
-19. [Difference of Two Arrays - JS code to find differences of two array](https://github.com/akto/algorithms-problem-solving/blob/master/differences-of-two-arrays.js)
-20. [Wherefore art thou - JS code to looks through an array of objects (first argument) and returns an array of all objects that have matching property and value pairs](https://github.com/akto/algorithms-problem-solving/blob/master/wherefore-art-thou.js)
-21. [Search and Replace - JS code to replace arguments with the provided values in the sentences](https://github.com/akto/algorithms-problem-solving/blob/master/search-and-replace.js)
-22. [Pig Latin - JS code which takes the first consonant (or consonant cluster) of an English word, moves it to the end of the word and suffixes an "ay". If a word begins with a vowel you just add "way" to the end.](https://github.com/akto/algorithms-problem-solving/blob/master/pig-latin.js)
-23. [DNA Pairing - JS code to match DNA codes](https://github.com/akto/algorithms-problem-solving/blob/master/dna-pairing.js)
-24. [Missing Letters - JS code to find missing letters in a letter sequence](https://github.com/akto/algorithms-problem-solving/blob/master/missing-letters.js)
-25. [Boo who - JS code to classify a value as boolean primitives](https://github.com/akto/algorithms-problem-solving/blob/master/boo-who.js)
+1. [`roman-numeral-convertor.js`](https://github.com/akto/algorithms-problem-solving/blob/master/roman-numeral-convertor.js) - JS code for converting Latin Numerals to Roman Numerals.
+2. [`reverse-a-string.js`](https://github.com/akto/algorithms-problem-solving/blob/master/reverse-a-string.js) - JS code for reversing a string.
+3. [`check-for-palindrome.js`](https://github.com/akto/algorithms-problem-solving/blob/master/check-for-palindrome.js) - JS code for checking the palindromes.
+4. [`factorial.js`](https://github.com/akto/algorithms-problem-solving/blob/master/factorial.js) - JS code for returning the result of a factorial function.
+5. [`length-of-longest-word-in-a-sentence.js`](https://github.com/akto/algorithms-problem-solving/blob/master/length-of-longest-word.js) - JS code for returning length of the longest word in a sentence.
+6. [`title-case.js`](https://github.com/akto/algorithms-problem-solving/blob/master/title-case.js) - JS code for making uppercase the first letter of every word in a sentence.
+7. [`return-largest-numbers-in-arrays.js`](https://github.com/akto/algorithms-problem-solving/blob/master/return-largest-numbers-in-arrays.js) - JS code to find the largest numbers in arrays.
+8. [`confirm-ending.js`](https://github.com/akto/algorithms-problem-solving/blob/master/confirm-ending.js) - JS code to check if the given argument is the ending of the phrase.
+9. [`repeat-a-sting.js`](https://github.com/akto/algorithms-problem-solving/blob/master/repeat-a-sting.js) - JS code to repeat the string in the array, given times.
+10. [`truncate-string.js`](https://github.com/akto/algorithms-problem-solving/blob/master/truncate-string.js) - JS code to truncate the string by given length.
+11. [`chunk-array.js`](https://github.com/akto/algorithms-problem-solving/blob/master/chunk-array.js) - JS code to chunk the array given length.
+12. [`chopping-off-the-array.js`](https://github.com/akto/algorithms-problem-solving/blob/master/chopping-off-the-array.js) - JS code to chop off the array from nth element-return the remaining part of the array.
+13. [`array-in-array.js`](https://github.com/akto/algorithms-problem-solving/blob/master/array-in-array.js) - - JS code to check if first element of array consist all letters in the second element of array.
+14. [`falsy-bouncer.js`](https://github.com/akto/algorithms-problem-solving/blob/master/falsy-bouncer.js) - JS code to find falsy values in js, Falsy values in JavaScript are false, null, 0, "", undefined, and NaN.
+15. [`seek-and-destroy.js`](https://github.com/akto/algorithms-problem-solving/blob/master/seek-and-destroy.js) - JS code to remove arguments from the inital array.
+16. [`where-does-it-belong.js`](https://github.com/akto/algorithms-problem-solving/blob/master/where-does-it-belong.js) - JS code to find the index of second argument inside of the first argument.
+17. [`ceasars-cipher.js`](https://github.com/akto/algorithms-problem-solving/blob/master/ceasars-cipher.js) - JS code to decode rot13 cipher.
+18. [`sum-all-numbers-in-a-range.js`](https://github.com/akto/algorithms-problem-solving/blob/master/sum-all-numbers-in-a-range.js) - JS code to find the sum of all numbers in a range.
+19. [`differences-of-two-arrays.js`](https://github.com/akto/algorithms-problem-solving/blob/master/differences-of-two-arrays.js) - JS code to find differences of two array.
+20. [`wherefore-art-thou.js`](https://github.com/akto/algorithms-problem-solving/blob/master/wherefore-art-thou.js) - JS code to looks through an array of objects (first argument) and returns an array of all objects that have matching property and value pairs.
+21. [`search-and-replace.js`](https://github.com/akto/algorithms-problem-solving/blob/master/search-and-replace.js) - JS code to replace arguments with the provided values in the sentences.
+22. [`pig-latin.js`](https://github.com/akto/algorithms-problem-solving/blob/master/pig-latin.js) - JS code which takes the first consonant (or consonant cluster) of an English word, moves it to the end of the word and suffixes an "ay". If a word begins with a vowel you just add "way" to the end.
+23. [`dna-pairing.js`](https://github.com/akto/algorithms-problem-solving/blob/master/dna-pairing.js) - JS code to match DNA codes.
+24. [`missing-letters.js`](https://github.com/akto/algorithms-problem-solving/blob/master/missing-letters.js) - JS code to find missing letters in a letter sequence.
+25. [`boo-who.js`](https://github.com/akto/algorithms-problem-solving/blob/master/boo-who.js) - JS code to classify a value as boolean primitives.
 26. [Uniting the unique - JS code to unite all the unique values in an array in the their occurance order](https://github.com/akto/algorithms-problem-solving/blob/master/unite-unique.js)
 27. [Convert characters to htmlentities - JS code to convert special characters to htmlentities](https://github.com/akto/algorithms-problem-solving/blob/master/convert-char-to-htmlentities.js)
 28. [Spinal Tap Case - JS code to convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.](https://github.com/akto/algorithms-problem-solving/blob/master/spinal-tap-case.js)
