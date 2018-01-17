@@ -1,5 +1,5 @@
 # Algorithms and Solutions to Problems
-My solutions to some easy to complex problems and challanges. Check out my [coding log](https://github.com/akto/algorithms-problem-solving/blob/master/codingLog.md)
+My solutions to some easy to complex problems and challanges. Check out my [coding log](https://github.com/akto/Tea-Bach-and-Coding/blob/master/CODING-LOG.md)
 
 ## Freecodecamp.com Challanges
 
