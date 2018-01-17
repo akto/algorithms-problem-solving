@@ -15,7 +15,7 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 10. [`truncate-string.js`](https://github.com/akto/algorithms-problem-solving/blob/master/truncate-string.js) - JS code to truncate the string by given length.
 11. [`chunk-array.js`](https://github.com/akto/algorithms-problem-solving/blob/master/chunk-array.js) - JS code to chunk the array given length.
 12. [`chopping-off-the-array.js`](https://github.com/akto/algorithms-problem-solving/blob/master/chopping-off-the-array.js) - JS code to chop off the array from nth element-return the remaining part of the array.
-13. [`array-in-array.js`](https://github.com/akto/algorithms-problem-solving/blob/master/array-in-array.js) - - JS code to check if first element of array consist all letters in the second element of array.
+13. [`array-in-array.js`](https://github.com/akto/algorithms-problem-solving/blob/master/array-in-array.js) - JS code to check if first element of array consist all letters in the second element of array.
 14. [`falsy-bouncer.js`](https://github.com/akto/algorithms-problem-solving/blob/master/falsy-bouncer.js) - JS code to find falsy values in js, Falsy values in JavaScript are false, null, 0, "", undefined, and NaN.
 15. [`seek-and-destroy.js`](https://github.com/akto/algorithms-problem-solving/blob/master/seek-and-destroy.js) - JS code to remove arguments from the inital array.
 16. [`where-does-it-belong.js`](https://github.com/akto/algorithms-problem-solving/blob/master/where-does-it-belong.js) - JS code to find the index of second argument inside of the first argument.
@@ -28,17 +28,17 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 23. [`dna-pairing.js`](https://github.com/akto/algorithms-problem-solving/blob/master/dna-pairing.js) - JS code to match DNA codes.
 24. [`missing-letters.js`](https://github.com/akto/algorithms-problem-solving/blob/master/missing-letters.js) - JS code to find missing letters in a letter sequence.
 25. [`boo-who.js`](https://github.com/akto/algorithms-problem-solving/blob/master/boo-who.js) - JS code to classify a value as boolean primitives.
-26. [Uniting the unique - JS code to unite all the unique values in an array in the their occurance order](https://github.com/akto/algorithms-problem-solving/blob/master/unite-unique.js)
-27. [Convert characters to htmlentities - JS code to convert special characters to htmlentities](https://github.com/akto/algorithms-problem-solving/blob/master/convert-char-to-htmlentities.js)
-28. [Spinal Tap Case - JS code to convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.](https://github.com/akto/algorithms-problem-solving/blob/master/spinal-tap-case.js)
-29. [Sum of All Odd Fibonacci Numbers - JS code to find the sum of the all odd numbers in a fibonacci sequence to given value](https://github.com/akto/algorithms-problem-solving/blob/master/sum-of-all-odd-fibonacci-sequence-to-given-value.js)
-30. [Sum of all primes - JS code to find the sum of all prime numbers till the given value](https://github.com/akto/algorithms-problem-solving/blob/master/sum-all-primes.js)
+26. [`unite-unique.js`](https://github.com/akto/algorithms-problem-solving/blob/master/unite-unique.js) - JS code to unite all the unique values in an array in the their occurance order.
+27. [`convert-char-to-htmlentities.js`](https://github.com/akto/algorithms-problem-solving/blob/master/convert-char-to-htmlentities.js) - JS code to convert special characters to htmlentities.
+28. [`spinal-tap-case.js`](https://github.com/akto/algorithms-problem-solving/blob/master/spinal-tap-case.js) - JS code to convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
+29. [`sum-of-all-odd-fibonacci-sequence-to-given-value.js`](https://github.com/akto/algorithms-problem-solving/blob/master/sum-of-all-odd-fibonacci-sequence-to-given-value.js) - JS code to find the sum of the all odd numbers in a fibonacci sequence to given value.
+30. [`sum-all-primes.js`](https://github.com/akto/algorithms-problem-solving/blob/master/sum-all-primes.js) - JS code to find the sum of all prime numbers till the given value.
 31. [`smallest-common-multiple.js`](https://github.com/akto/algorithms-problem-solving/blob/master/smallest-common-multiple.js) - JS code to find smallest common multiple of the numbers in the range.
 32. [`finders-keepers.js`](https://github.com/akto/algorithms-problem-solving/blob/master/finders-keepers.js) - JS code to looks through an array (first argument) and returns the first element in the array that passes a truth test (second argument)
 
 
 ## Adventofcode.com challanges
 
-1. [Accumulator of the similarities - JS code to find the sum of the values that are similar with the next ones](https://github.com/akto/algorithms-problem-solving/blob/master/advent-accumulator-the-similarities-of-an-array.js)
-2. [Accumulator of the similarities of two array - JS code to find the double sum of the similar values in similar index of two different arrays](https://github.com/akto/algorithms-problem-solving/blob/master/advent-accumulator-of-similarities-of-two-array.js)
-3. [Sum of differences of max and min values in rows](https://github.com/akto/algorithms-problem-solving/blob/master/advent-sum-of-diff-in-rows.js)
+1. [`advent-accumulator-the-similarities-of-an-array.js`](https://github.com/akto/algorithms-problem-solving/blob/master/advent-accumulator-the-similarities-of-an-array.js) - JS code to find the sum of the values that are similar with the next ones.
+2. [`advent-accumulator-of-similarities-of-two-array.js`](https://github.com/akto/algorithms-problem-solving/blob/master/advent-accumulator-of-similarities-of-two-array.js) - JS code to find the double sum of the similar values in similar index of two different arrays.
+3. [`advent-sum-of-diff-in-rows.js`](https://github.com/akto/algorithms-problem-solving/blob/master/advent-sum-of-diff-in-rows.js)
