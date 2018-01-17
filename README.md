@@ -35,7 +35,7 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 30. [`sum-all-primes.js`](https://github.com/akto/algorithms-problem-solving/blob/master/sum-all-primes.js) - JS code to find the sum of all prime numbers till the given value.
 31. [`smallest-common-multiple.js`](https://github.com/akto/algorithms-problem-solving/blob/master/smallest-common-multiple.js) - JS code to find smallest common multiple of the numbers in the range.
 32. [`finders-keepers.js`](https://github.com/akto/algorithms-problem-solving/blob/master/finders-keepers.js) - JS code to looks through an array (first argument) and returns the first element in the array that passes a truth test (second argument)
-33. [`drop-it.js`](https://github.com/akto/algorithms-problem-solving/blob/master/drop-it.js) - JS code to drop the elements of an array (first argument), starting from the front, until the predicate (second argument) returns [`true`].
+33. [`drop-it.js`](https://github.com/akto/algorithms-problem-solving/blob/master/drop-it.js) - JS code to drop the elements of an array (first argument), starting from the front, until the predicate (second argument) returns `true`.
 
 
 ## Adventofcode.com challanges
