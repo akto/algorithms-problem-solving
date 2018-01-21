@@ -1,7 +1,16 @@
+/*
+Check if the predicate (second argument) is truthy on all elements of a collection (first argument).
+*/
+
 function truthCheck(collection, pre) {
   // Is everyone being true?
-  
-  return pre;
+  var inc = [false,'',0,undefined,null,NaN];
+  var state = true;
+  collection.map(function( i ){
+      if( inc.includes( i[pre] ) ){ state = false; }
+      //console.log( 'Obejct:('+ pre + ')' + i[pre] + '. State:'+ state+ '. ' + ( !inc.includes( i[pre] ) ) );
+  });
+  return state;
 }
 
 console.clear();
