@@ -1,5 +1,18 @@
+/*
+Return an English translated sentence of the passed binary string.
+*/
+
 function binaryAgent(str) {
-  return str;
+    var agent = '';
+    // I like to see every code steps while i write code
+    //console.log( str.split(' ') );
+    str.split(' ').map(function( s ){
+        //console.log( s );
+        //console.log( String.fromCharCode( parseInt( s,2 ) ) );
+        agent += String.fromCharCode( parseInt( s,2 ) );        
+    });
+    //console.log( agent );
+  return agent;
 }
 
 console.clear();
