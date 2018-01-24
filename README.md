@@ -39,7 +39,8 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 34. [`steamroller.js`](https://github.com/akto/algorithms-problem-solving/blob/master/steamroller.js) - JS code to flatten arrays!
 35. [`binary-digits.js`](https://github.com/akto/algorithms-problem-solving/blob/master/binary-agents.js) - JS code to return an English translated sentence of the passed binary string.
 36. [`everything-be-true.js`](https://github.com/akto/algorithms-problem-solving/blob/master/everything-be-true.js) - JS code to check if the predicate (second argument) is truthy on all elements of a collection (first argument).
-37. [`argument-optional.js`](https://github.com/akto/algorithms-problem-solving/blob/master/arguments-optional.js) - NOT FINISHED!
+37. [`argument-optional.js`](https://github.com/akto/algorithms-problem-solving/blob/master/arguments-optional.js) - JS code to sums two arguments together. If only one argument is provided, then return a function that expects one argument and returns the sum.
+38. [`validate-us-phone-numbers.js`](https://github.com/akto/algorithms-problem-solving/blob/master/validate-us-phone-numbers.js) - NOT FINISHED!
 
 
 ## Adventofcode.com challanges
