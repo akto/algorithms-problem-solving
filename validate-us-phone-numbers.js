@@ -1,8 +1,12 @@
 function telephoneCheck(str) {
-  var reg = /\d/g,
-      regMatch  = str.match( reg );
-  console.log( regMatch.length == 11 ? (regMatch[0] == 1 ? true : false) : false );
-  // Good luck!
+  var regDash = /\-/g,
+      regNum = /-?\d/g,
+      regDashMatch = str.match( regDash ),
+      regNumMatch = str.match( regNum ),
+      regNumMatchState = regNumMatch.length == 11 ? ( regNumMatch[0] == 1 ? true : false) : (regNumMatch.length == 10 ? true : false);  
+
+      //console.log( '('+str+')'+regDashMatch+' : '+regNumMatch + ' :: ' + regNumMatchState );
+
   return true;
 }
 
