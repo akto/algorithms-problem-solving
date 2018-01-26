@@ -1,6 +1,6 @@
 function telephoneCheck(str) {
   var regDash = /\-/g,
-      regTest = /^1?\(\d+\)?\-?/g,
+      regTest = /^1?\(\d{1,3}\)\-?/g,
       regNum = /-?\d/g,
       regDashMatch = str.match( regDash ),
       regTestMatch = str.match( regTest ),
@@ -12,6 +12,9 @@ function telephoneCheck(str) {
   return true;
 }
 
+/*
+regTest = /^1?\(\d{1,3}\)\-?/g --> Using \(\d{1,3}\) match (555) but not (6505552368). It means 3 numbers in the paranthesis (x,y,z).
+*/
 console.clear();
 console.time();
 
