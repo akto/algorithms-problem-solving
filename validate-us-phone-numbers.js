@@ -1,20 +1,33 @@
 function telephoneCheck(str) {
   var regDash = /\-/g,
-      regTest = /^1?\(\d{1,3}\)\-?/g,
+      regTest = /^1?\s?\(\d{1,3}\)\s?\d{1,3}\-?\d{1,4}/g,
+      regTestCase1 = /\d{1,3}\-|\s\d{1,3}\-|\s\d{1,4}/g,
+      regTestMaster = /\1?\s?{\d{3}\-|\(\d{3}\)}?\-?\s?\d{3}\-?\s?\d{4}/g,
       regNum = /-?\d/g,
       regDashMatch = str.match( regDash ),
       regTestMatch = str.match( regTest ),
+      regTestCase1Match = str.match( regTestCase1 ),
+      regTestMasterMatch = str.match( regTestMaster ),
       regNumMatch = str.match( regNum ),
       regNumMatchState = regNumMatch.length == 11 ? ( regNumMatch[0] == 1 ? true : false) : (regNumMatch.length == 10 ? true : false);  
-      console.log( '('+str+') - '+ regTestMatch );
+      
+      console.log( '(\''+str+'\') - '+regTestMasterMatch);
+
+      //console.log( '('+str+') - '+regNumMatchState + ' :: ' + regTestMatch +' ::: '+regTestCase1Match );
+      /*
+      if( regNumMatchState ){
+        ( regTestMatch != null ? true : false )
+        console.log( '('+str+') - '+regNumMatch + ' :: ' + regNumMatchState );
+      }else{ 
+        console.log( '('+str+') - '+ false ); return false;
+      }
+      */
+      //console.log( '('+str+') - '+ regTestMatch );
       //console.log( '('+str+')'+regDashMatch+' : '+regNumMatch + ' :: ' + regNumMatchState );
 
   return true;
 }
 
-/*
-regTest = /^1?\(\d{1,3}\)\-?/g --> Using \(\d{1,3}\) match (555) but not (6505552368). It means 3 numbers in the paranthesis (x,y,z).
-*/
 console.clear();
 console.time();
 
