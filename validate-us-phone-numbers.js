@@ -1,17 +1,17 @@
 function telephoneCheck(str) {
-  var regDash = /\-/g,
-      regTest = /^1?\s?\(\d{1,3}\)\s?\d{1,3}\-?\d{1,4}/g,
-      regTestCase1 = /\d{1,3}\-|\s\d{1,3}\-|\s\d{1,4}/g,
-      regTestMaster = /\1?\s?{\d{3}\-|\(\d{3}\)}?\-?\s?\d{3}\-?\s?\d{4}/g,
-      regNum = /-?\d/g,
-      regDashMatch = str.match( regDash ),
+  var regTest = /\1?\s?\d{3}\-?\s?\d{3}\-?\s?\d{4}/g,      
       regTestMatch = str.match( regTest ),
-      regTestCase1Match = str.match( regTestCase1 ),
+      regTestMaster = /\(\d{3}\)\-?\s?\d{3}\-?\s?\d{4}/g,
       regTestMasterMatch = str.match( regTestMaster ),
+      regNum = /-?\d/g,
       regNumMatch = str.match( regNum ),
-      regNumMatchState = regNumMatch.length == 11 ? ( regNumMatch[0] == 1 ? true : false) : (regNumMatch.length == 10 ? true : false);  
+      regNumMatchState = regNumMatch.length == 11 ? ( regNumMatch[0] == 1 ? true : false) : (regNumMatch.length == 10 ? true : false);
+      // first the number of the digits must pass
+      // If there is 11 digits starting with 1 or 10 digits
+      if( regNumMatchState ){ 
+        console.log( '(\''+str+'\') - '+regTestMasterMatch + ' ; '+regTestMatch );
+      }
       
-      console.log( '(\''+str+'\') - '+regTestMasterMatch);
 
       //console.log( '('+str+') - '+regNumMatchState + ' :: ' + regTestMatch +' ::: '+regTestCase1Match );
       /*
