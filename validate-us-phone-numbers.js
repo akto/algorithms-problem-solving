@@ -1,33 +1,24 @@
 function telephoneCheck(str) {
-  var regTest = /\d{3}\-?\s?\d{3}\-?\s?\d{4}/g,      
-      regTestMatch = str.match( regTest ),
-      regTestMaster = /(\((?=\d{3}\))|\d{3})\-?\s?\d{3}\-?\s?\d{4}/g,
-      regTestMasterMatch = str.match( regTestMaster ),
-      regTestCase = /\((?=\d{3}\))/g,
-      regTestCaseMatch = str.match( regTestCase );
+  // Very Brute Force
+  /* regNegationPar = regex for finding if there is a match starts with ( but after 3 digit not closed with ) */
+  var regNegationPar = /\((?!\d{3}\))/g,      
+      regNegationParMatch = str.match( regNegationPar ),
+      regNegationParMatchState = regNegationParMatch == null ? true : false,
+      /* regMaster is to find if regular 11 or 10 character numbers and in suiable form mostly, its not pass every test */
+      regMaster = /[1]?\s?(\(\d{3}\)|\d{3})\-?\s?\d{3}\-?\s?\d{4}/g,
+      regMasterMatch = str.match( regMaster ),
+      regMasterMatchState = regMasterMatch == null ? false : true,
+      /* regNum is to count all digits and test whether it starts with only 1 if its 11 digits and it is only 10 digits */
       regNum = /-?\d/g,
       regNumMatch = str.match( regNum ),
       regNumMatchState = regNumMatch.length == 11 ? ( regNumMatch[0] == 1 ? true : false) : (regNumMatch.length == 10 ? true : false);
-      // first the number of the digits must pass
-      // If there is 11 digits starting with 1 or 10 digits
-      if( regNumMatchState ){ 
-        console.log( '(\''+str+'\') - '+regTestMasterMatch + ' ; '+regTestCaseMatch );
-      }
       
-
-      //console.log( '('+str+') - '+regNumMatchState + ' :: ' + regTestMatch +' ::: '+regTestCase1Match );
-      /*
-      if( regNumMatchState ){
-        ( regTestMatch != null ? true : false )
-        console.log( '('+str+') - '+regNumMatch + ' :: ' + regNumMatchState );
-      }else{ 
-        console.log( '('+str+') - '+ false ); return false;
+      if( regNumMatchState && regMasterMatchState && regNegationParMatchState){ 
+        //console.log( '(\''+str+'\') - '+regMasterMatch + ' ; '+ regNegationParMatch );
+        return true;
       }
-      */
-      //console.log( '('+str+') - '+ regTestMatch );
-      //console.log( '('+str+')'+regDashMatch+' : '+regNumMatch + ' :: ' + regNumMatchState );
 
-  return true;
+  return false;
 }
 
 console.clear();
