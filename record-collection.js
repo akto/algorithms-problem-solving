@@ -29,14 +29,16 @@ var collectionCopy = JSON.parse(JSON.stringify(collection));
 
 // Only change code below this line
 function updateRecords(id, prop, value) {
-    console.log( 'ID: \''+id+', Prop: '+prop+', Value: '+prop+'\' --> '+collection[id][prop] );
+    //console.log( 'ID: \''+id+', Prop: '+prop+', Value: '+prop+'\' --> '+collection[id][prop] );
   if( prop != 'tracks' && value != ''){
-      collection[id][prop] = value;
-    console.log( collection[id][prop] );    
+    collection[id][prop] = value;
+    //console.log( collection[id][prop] );    
   }else if( prop == 'tracks' && value != ''){
-      if( collection[id][prop] == undefined ){ collection[id][prop] = []; }
-      collection[id][prop].push( value );
-      console.log( 'New Track List: '+collection[id][prop] )
+    if( collection[id][prop] == undefined ){ collection[id][prop] = []; }
+    collection[id][prop].push( value );
+    //console.log( 'New Track List: '+collection[id][prop] )
+  }else if( value == '' ){
+    delete collection[id][prop];
   }
   
 
