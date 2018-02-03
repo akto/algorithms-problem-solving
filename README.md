@@ -42,6 +42,7 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 37. [`argument-optional.js`](https://github.com/akto/algorithms-problem-solving/blob/master/arguments-optional.js) - JS code to sums two arguments together. If only one argument is provided, then return a function that expects one argument and returns the sum.
 38. [`validate-us-phone-numbers.js`](https://github.com/akto/algorithms-problem-solving/blob/master/validate-us-phone-numbers.js) - JS code to validate US phone number formats!
 39. [`record-collection.js`](https://github.com/akto/algorithms-problem-solving/blob/master/record-collection.js) - JS code to iterate throught object properties and methods.
+40. [`symmetric-difference.js`](https://github.com/akto/algorithms-problem-solving/blob/master/symmetric-difference.js) - NOT FINISHED!
 
 
 ## Adventofcode.com challanges
