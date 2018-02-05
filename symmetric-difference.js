@@ -1,6 +1,17 @@
-
 function sym(args) {
-  return args;
+  var argss = Array.prototype.slice.call( arguments );
+  var flatten = argss.reduce(function( acc,cur ){
+      if( acc == [] ){
+          return acc = cur;
+      }else{
+        cur.map( function(i){ if( acc.include( i ) ){ cur.splice( i,1 ); } console.log( i );});    
+      }
+      
+  },[]);
+  console.log( flatten );
+  flatten.map( function( i ){
+      if( !flatten.includes( i, flatten.indexOf( i )+1 )){ n.push( i ); }
+  }); 
 }
 
 console.clear();
