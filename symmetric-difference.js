@@ -26,6 +26,7 @@ function sym(args) {
       }
   },[]);
   console.log('Result: ' + flatten );
+  return flatten;
 }
 function uniteUnique( arr ){
   /* https://github.com/akto/algorithms-problem-solving/blob/master/unite-unique.js */
