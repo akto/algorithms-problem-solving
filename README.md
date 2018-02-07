@@ -53,4 +53,4 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 
 ## Project Euler Challanges
 
-1.[`projecteuler-largest-palindrome.js`](https://github.com/akto/algorithms-problem-solving/blob/master/projecteuler-largest-palindrome.js) - JS code to find largest palindrome in given interval.
+1. [`projecteuler-largest-palindrome.js`](https://github.com/akto/algorithms-problem-solving/blob/master/projecteuler-largest-palindrome.js) - JS code to find largest palindrome in given interval.
