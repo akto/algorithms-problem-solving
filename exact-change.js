@@ -5,15 +5,15 @@ function checkCashRegister(price, cash, cid) {
 }
 
 // Example cash-in-drawer array:
-// [["PENNY", 1.01],
-// ["NICKEL", 2.05],
-// ["DIME", 3.10],
-// ["QUARTER", 4.25],
-// ["ONE", 90.00],
-// ["FIVE", 55.00],
-// ["TEN", 20.00],
-// ["TWENTY", 60.00],
-// ["ONE HUNDRED", 100.00]]
+// [["PENNY", 1.01], .01
+// ["NICKEL", 2.05], .05
+// ["DIME", 3.10], .10
+// ["QUARTER", 4.25], .25
+// ["ONE", 90.00], 1
+// ["FIVE", 55.00], 5
+// ["TEN", 20.00], 10
+// ["TWENTY", 60.00], 20
+// ["ONE HUNDRED", 100.00]] 100
 console.clear();
 console.time()
 console.log('---------------------');
