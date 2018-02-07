@@ -49,4 +49,11 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 
 1. [`advent-accumulator-the-similarities-of-an-array.js`](https://github.com/akto/algorithms-problem-solving/blob/master/advent-accumulator-the-similarities-of-an-array.js) - JS code to find the sum of the values that are similar with the next ones.
 2. [`advent-accumulator-of-similarities-of-two-array.js`](https://github.com/akto/algorithms-problem-solving/blob/master/advent-accumulator-of-similarities-of-two-array.js) - JS code to find the double sum of the similar values in similar index of two different arrays.
+
+## Project Euler Challanges
+
+1.[`projecteuler-largest-palindrome.js`](https://github.com/akto/algorithms-problem-solving/blob/master/projecteuler-largest-palindrome.js) - JS code to find largest palindrome in given interval.
+
+
+
 3. [`advent-sum-of-diff-in-rows.js`](https://github.com/akto/algorithms-problem-solving/blob/master/advent-sum-of-diff-in-rows.js)
