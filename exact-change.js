@@ -1,20 +1,40 @@
 function checkCashRegister(price, cash, cid) {
-  var change;
+  var change = cash - price;
   // Here is your change, ma'am.
-  console.log( Money.penny );
+  var obj = cid.map( function( a ){
+  	var n = new Object();
+  	n.name = a[0],
+  	n.value = Moneys[ a[0] ] ;
+  	n.amount = a[1];
+	return n;
+  } );
+  //Money.setValue( Moneys.nickel );
+  console.log( obj );
   return change;
 }
 
-var Money = {
-	penny : 0.01,
-	nickel : 0.05,
-	dime : 0.1,
-	quarter : 0.25,
-	one : 1,
-	five : 5,
-	ten : 10,
-	twenty : 20,
-	hundred : 100
+var Moneys = {
+	'PENNY' : 0.01,
+	'NICKEL' : 0.05,
+	'DIME' : 0.1,
+	'QUARTER' : 0.25,
+	'ONE' : 1,
+	'FIVE' : 5,
+	'TEN' : 10,
+	'TWENTY' : 20,
+	'HUNDRED' : 100
+}
+
+var Money = function( n,c ){
+	this.name = n,
+	this.value = c,
+	this.amount = 0,
+	this.getValue = function(){
+		return this.value;
+	},
+	this.setValue = function( val ){
+		this.value = val
+	}
 }
 
 // Example cash-in-drawer array:
