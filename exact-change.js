@@ -1,4 +1,31 @@
-
+var Moneys = {
+	'PENNY' : { value : 0.01, amount : 0, quantity : 0 },
+	'NICKEL' : { value : 0.05, amount : 0, quantity : 0 },
+	'DIME' : { value : 0.1, amount : 0, quantity : 0 },
+	'QUARTER' :{ value : 0.25, amount : 0, quantity : 0 },
+	'ONE' : { value : 1, amount : 0, quantity : 0 },
+	'FIVE' : { value : 5, amount : 0, quantity : 0 },
+	'TEN' : { value : 10, amount : 0, quantity : 0 },
+	'TWENTY' : { value : 20, amount : 0, quantity : 0 },
+	'ONE HUNDRED' : { value : 100, amount : 0, quantity : 0 },
+	ret : function( change ){
+		if( change > 100 ){
+			if( Moneys['ONE HUNDRED'].quantity >= 1 ){ 
+				let ch = Math.floor(change / 100); 
+				if( ch >= Moneys['ONE HUNDRED'].quantity ){ 
+					changeTotal.push( [ 'ONE HUNDRED',Moneys['ONE HUNDRED'].amount*Moneys['ONE HUNDRED'].value ] ); 
+				}
+			}else{ console.log( 'no 100'); }
+  		}else if( change > 20 ){
+			if( Moneys['TWENTY'].quantity >= 1 ){ 
+				let ch = Math.floor(change / 20);
+				if( ch >= Moneys['TWENTY'].quantity ){ 
+					return [ 'TWENTY',Moneys['TWENTY'].quantity*Moneys['TWENTY'].value ] ; 
+				} 
+			}else{ console.log( 'no 20'); }
+		}
+	}
+};
 function checkCashRegister(price, cash, cid) {
   var change = cash - price;
   var changeTotal = [];
@@ -34,21 +61,12 @@ function checkCashRegister(price, cash, cid) {
   	}else{ console.log( 'no 20'); }
   }
   console.log( changeTotal );
+  console.log( Moneys.ret( change ) );
   return Moneys;
 }
 
 
-var Moneys = {
-	'PENNY' : { value : 0.01, amount : 0, quantity : 0 },
-	'NICKEL' : { value : 0.05, amount : 0, quantity : 0 },
-	'DIME' : { value : 0.1, amount : 0, quantity : 0 },
-	'QUARTER' :{ value : 0.25, amount : 0, quantity : 0 },
-	'ONE' : { value : 1, amount : 0, quantity : 0 },
-	'FIVE' : { value : 5, amount : 0, quantity : 0 },
-	'TEN' : { value : 10, amount : 0, quantity : 0 },
-	'TWENTY' : { value : 20, amount : 0, quantity : 0 },
-	'ONE HUNDRED' : { value : 100, amount : 0, quantity : 0 }
-};
+
 /*
 var Money = function( n,c ){
 	this.name = n,
