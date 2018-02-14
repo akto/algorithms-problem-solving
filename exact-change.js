@@ -1,30 +1,55 @@
+
 function checkCashRegister(price, cash, cid) {
   var change = cash - price;
+  var changeTotal = [];
   // Here is your change, ma'am.
   var obj = cid.map( function( a ){
-  	var n = new Object();
+  	/*var n = new Object();
   	n.name = a[0],
   	n.value = Moneys[ a[0] ] ;
-  	n.amount = a[1];
-	return n;
+  	n.amount = a[1];*/
+  	//var n = Moneys[ a[0] ];
+  	Moneys[ a[0] ].amount = a[1];
+  	Moneys[ a[0] ].quantity = Math.round( Moneys[ a[0] ].amount / Moneys[ a[0] ].value );
+  	//console.log( Moneys[ a[0] ].quantity );
+
+  	//console.log( Moneys[ a[0] ] );
+  	//Moneys[ a[0] ]['amount'] = a[1];
+	return Moneys;
   } );
-  //Money.setValue( Moneys.nickel );
-  console.log( obj );
-  return change;
+
+  if( change > 100 ){
+  	if( Moneys['ONE HUNDRED'].quantity >= 1 ){ 
+  		let ch = Math.floor(change / 100); 
+  		if( ch >= Moneys['ONE HUNDRED'].quantity ){ 
+  			changeTotal.push( [ 'ONE HUNDRED',Moneys['ONE HUNDRED'].amount*Moneys['ONE HUNDRED'].value ] ); 
+  		}
+  	}else{ console.log( 'no 100'); }
+  }else if( change > 20 ){
+  	if( Moneys['TWENTY'].quantity >= 1 ){ 
+  		let ch = Math.floor(change / 20);
+  		if( ch >= Moneys['TWENTY'].quantity ){ 
+  			changeTotal.push( [ 'TWENTY',Moneys['TWENTY'].quantity*Moneys['TWENTY'].value ] ); 
+  		} 
+  	}else{ console.log( 'no 20'); }
+  }
+  console.log( changeTotal );
+  return Moneys;
 }
+
 
 var Moneys = {
-	'PENNY' : 0.01,
-	'NICKEL' : 0.05,
-	'DIME' : 0.1,
-	'QUARTER' : 0.25,
-	'ONE' : 1,
-	'FIVE' : 5,
-	'TEN' : 10,
-	'TWENTY' : 20,
-	'HUNDRED' : 100
-}
-
+	'PENNY' : { value : 0.01, amount : 0, quantity : 0 },
+	'NICKEL' : { value : 0.05, amount : 0, quantity : 0 },
+	'DIME' : { value : 0.1, amount : 0, quantity : 0 },
+	'QUARTER' :{ value : 0.25, amount : 0, quantity : 0 },
+	'ONE' : { value : 1, amount : 0, quantity : 0 },
+	'FIVE' : { value : 5, amount : 0, quantity : 0 },
+	'TEN' : { value : 10, amount : 0, quantity : 0 },
+	'TWENTY' : { value : 20, amount : 0, quantity : 0 },
+	'ONE HUNDRED' : { value : 100, amount : 0, quantity : 0 }
+};
+/*
 var Money = function( n,c ){
 	this.name = n,
 	this.value = c,
@@ -35,7 +60,7 @@ var Money = function( n,c ){
 	this.setValue = function( val ){
 		this.value = val
 	}
-}
+}*/
 
 // Example cash-in-drawer array:
 // [["PENNY", 1.01], .01
