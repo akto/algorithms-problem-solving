@@ -9,21 +9,41 @@ var Moneys = {
 	'TWENTY' : { value : 20, amount : 0, quantity : 0 },
 	'ONE HUNDRED' : { value : 100, amount : 0, quantity : 0 },
 	ret : function( change ){
-		if( change > 100 ){
-			if( Moneys['ONE HUNDRED'].quantity >= 1 ){ 
-				let ch = Math.floor(change / 100); 
-				if( ch >= Moneys['ONE HUNDRED'].quantity ){ 
-					changeTotal.push( [ 'ONE HUNDRED',Moneys['ONE HUNDRED'].amount*Moneys['ONE HUNDRED'].value ] ); 
+		var remain = change;
+		var result = [];
+		if( remain > 100 ){
+			let hundred = Moneys['ONE HUNDRED'];
+			if( hundred.quantity >= 1 ){ 
+				let ch = Math.floor(change / 100);
+				remain = remain - hundred.quantity*hundred.value;
+				console.log(hundred.quantity +'--' +remain);
+				if( ch >= hundred.quantity ){ 
+					result.push( [ 'ONE HUNDRED',hundred.amount*hundred.value ] ); 
 				}
-			}else{ console.log( 'no 100'); }
-  		}else if( change > 20 ){
-			if( Moneys['TWENTY'].quantity >= 1 ){ 
-				let ch = Math.floor(change / 20);
-				if( ch >= Moneys['TWENTY'].quantity ){ 
-					return [ 'TWENTY',Moneys['TWENTY'].quantity*Moneys['TWENTY'].value ] ; 
+			}
+  		}else if( remain > 20 && Moneys['TWENTY'].quantity >= 1){
+  				let twenty = Moneys['TWENTY'];
+			 
+				let ch = Math.floor(remain / 20);
+				if( ch >= twenty.quantity ){ 
+					result.push( [ 'TWENTY',twenty.quantity*twenty.value ] ); 
 				} 
-			}else{ console.log( 'no 20'); }
+				remain = Math.floor( remain - (twenty.quantity*twenty.value) );
+				console.log(twenty.amount +'---'+ remain);
+			
+		}else if( remain > 10 ){
+			let ten = Moneys['TEN'];
+			if( ten.quantity >= 1 ){ 
+				let ch = Math.floor(remain / 10);
+				if( ch >= ten.quantity ){ 
+					result.push( [ 'TEN',ten.quantity*ten.value ] ); 
+				} 
+				remain = remain - ten.quantity*ten.value;
+				console.log(remain);
+			}
 		}
+	return result;
+
 	}
 };
 function checkCashRegister(price, cash, cid) {
@@ -44,7 +64,7 @@ function checkCashRegister(price, cash, cid) {
   	//Moneys[ a[0] ]['amount'] = a[1];
 	return Moneys;
   } );
-
+/*
   if( change > 100 ){
   	if( Moneys['ONE HUNDRED'].quantity >= 1 ){ 
   		let ch = Math.floor(change / 100); 
@@ -59,8 +79,8 @@ function checkCashRegister(price, cash, cid) {
   			changeTotal.push( [ 'TWENTY',Moneys['TWENTY'].quantity*Moneys['TWENTY'].value ] ); 
   		} 
   	}else{ console.log( 'no 20'); }
-  }
-  console.log( changeTotal );
+  }*/
+  //console.log( changeTotal );
   console.log( Moneys.ret( change ) );
   return Moneys;
 }
