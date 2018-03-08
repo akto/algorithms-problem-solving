@@ -1,18 +1,38 @@
-var Moneys = {
-	'PENNY' : { value : 0.01, amount : 0, quantity : 0 },
-	'NICKEL' : { value : 0.05, amount : 0, quantity : 0 },
-	'DIME' : { value : 0.1, amount : 0, quantity : 0 },
-	'QUARTER' :{ value : 0.25, amount : 0, quantity : 0 },
-	'ONE' : { value : 1, amount : 0, quantity : 0 },
-	'FIVE' : { value : 5, amount : 0, quantity : 0 },
-	'TEN' : { value : 10, amount : 0, quantity : 0 },
-	'TWENTY' : { value : 20, amount : 0, quantity : 0 },
-	'ONE HUNDRED' : { value : 100, amount : 0, quantity : 0 }
-};
-
 function checkCashRegister(price, cash, cid) {
-  var change = cash - price;
-  var changeTotal = [];
+	var change = cash - price;
+	var CashRegister = {
+		'PENNY' : { value : 0.01, amount : 0, quantity : 0 },
+		'NICKEL' : { value : 0.05, amount : 0, quantity : 0 },
+		'DIME' : { value : 0.1, amount : 0, quantity : 0 },
+		'QUARTER' :{ value : 0.25, amount : 0, quantity : 0 },
+		'ONE' : { value : 1, amount : 0, quantity : 0 },
+		'FIVE' : { value : 5, amount : 0, quantity : 0 },
+		'TEN' : { value : 10, amount : 0, quantity : 0 },
+		'TWENTY' : { value : 20, amount : 0, quantity : 0 },
+		'ONE HUNDRED' : { value : 100, amount : 0, quantity : 0 },
+		ret : function( c ){
+			if( c >= Moneys['TWENTY'].value && c >= Moneys['TWENTY'].amount){  c -= Moneys['TWENTY'].amount; console.log(c); if( c >= 0 ){ this.ret( c ); } }
+			else if( c >= Moneys['TEN'].value && c >= Moneys['TEN'].amount){  c -= Moneys['TEN'].amount; console.log(c); if( c >= 0 ){ this.ret( c ); } }
+			else if( c >= Moneys['FIVE'].value && c >= Moneys['FIVE'].amount){  c -= Moneys['FIVE'].amount; console.log(c); if( c >= 0 ){ this.ret( c ); } }
+		}
+	};
+	var changes = {
+		'PENNY' : { value : 0.01, amount : 0, quantity : 0 },
+		'NICKEL' : { value : 0.05, amount : 0, quantity : 0 },
+		'DIME' : { value : 0.1, amount : 0, quantity : 0 },
+		'QUARTER' :{ value : 0.25, amount : 0, quantity : 0 },
+		'ONE' : { value : 1, amount : 0, quantity : 0 },
+		'FIVE' : { value : 5, amount : 0, quantity : 0 },
+		'TEN' : { value : 10, amount : 0, quantity : 0 },
+		'TWENTY' : { value : 20, amount : 0, quantity : 0 },
+		'ONE HUNDRED' : { value : 100, amount : 0, quantity : 0 },
+		ret : function( c ){
+			if( c >= Moneys['TWENTY'].value && c >= Moneys['TWENTY'].amount){  c -= Moneys['TWENTY'].amount; console.log(c); if( c >= 0 ){ this.ret( c ); } }
+			else if( c >= Moneys['TEN'].value && c >= Moneys['TEN'].amount){  c -= Moneys['TEN'].amount; console.log(c); if( c >= 0 ){ this.ret( c ); } }
+			else if( c >= Moneys['FIVE'].value && c >= Moneys['FIVE'].amount){  c -= Moneys['FIVE'].amount; console.log(c); if( c >= 0 ){ this.ret( c ); } }
+		}
+	};
+  
   // Here is your change, ma'am.
   var obj = cid.map( function( a ){
   	/* 
@@ -22,11 +42,9 @@ function checkCashRegister(price, cash, cid) {
   	*/
   	Moneys[ a[0] ].amount = a[1];
   	Moneys[ a[0] ].quantity = Math.round( Moneys[ a[0] ].amount / Moneys[ a[0] ].value );
-  	change -= a[1];
-  	console.log( change );
-	return Moneys;
   } );
   console.log( Moneys );
+  Moneys.ret( change );
   return Moneys;
 }
 
