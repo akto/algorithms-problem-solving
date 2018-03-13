@@ -1,115 +1,60 @@
-var Moneys = {
-	'PENNY' : { value : 0.01, amount : 0, quantity : 0 },
-	'NICKEL' : { value : 0.05, amount : 0, quantity : 0 },
-	'DIME' : { value : 0.1, amount : 0, quantity : 0 },
-	'QUARTER' :{ value : 0.25, amount : 0, quantity : 0 },
-	'ONE' : { value : 1, amount : 0, quantity : 0 },
-	'FIVE' : { value : 5, amount : 0, quantity : 0 },
-	'TEN' : { value : 10, amount : 0, quantity : 0 },
-	'TWENTY' : { value : 20, amount : 0, quantity : 0 },
-	'ONE HUNDRED' : { value : 100, amount : 0, quantity : 0 },
-	ret : function( change ){
-		var remain = change;
-		var result = [];
-		if( remain > 100 ){
-			let hundred = Moneys['ONE HUNDRED'];
-			if( hundred.quantity >= 1 ){ 
-				let ch = Math.floor(change / 100);
-				remain = remain - hundred.quantity*hundred.value;
-				console.log(hundred.quantity +'--' +remain);
-				if( ch >= hundred.quantity ){ 
-					result.push( [ 'ONE HUNDRED',hundred.amount*hundred.value ] ); 
-				}
+function checkCashRegister(price, cash, cid) {
+	var change = cash - price;
+	var Moneys = {
+		'PENNY' : { value : 0.01, amount : 0, quantity : 0 },
+		'NICKEL' : { value : 0.05, amount : 0, quantity : 0 },
+		'DIME' : { value : 0.1, amount : 0, quantity : 0 },
+		'QUARTER' :{ value : 0.25, amount : 0, quantity : 0 },
+		'ONE' : { value : 1, amount : 0, quantity : 0 },
+		'FIVE' : { value : 5, amount : 0, quantity : 0 },
+		'TEN' : { value : 10, amount : 0, quantity : 0 },
+		'TWENTY' : { value : 20, amount : 0, quantity : 0 },
+		'ONE HUNDRED' : { value : 100, amount : 0, quantity : 0 },
+		changetoreturn : [],
+		totalChange : function(  ){	
+			if( this.changetoreturn.length != 0 ){
+				this.changetoreturn.reduce(function( e,ce ){ 
+					if( e[0] == ce[0] ){ 
+						e[1] += ce[1]; 
+					}
+					console.log( e + '--' +ce) });
 			}
-  		}else if( remain > 20 && Moneys['TWENTY'].quantity >= 1){
-  				let twenty = Moneys['TWENTY'];
-			 
-				let ch = Math.floor(remain / 20);
-				if( ch >= twenty.quantity ){ 
-					result.push( [ 'TWENTY',twenty.quantity*twenty.value ] ); 
-				} 
-				remain = Math.floor( remain - (twenty.quantity*twenty.value) );
-				console.log(twenty.amount +'---'+ remain);
-			
-		}else if( remain > 10 ){
-			let ten = Moneys['TEN'];
-			if( ten.quantity >= 1 ){ 
-				let ch = Math.floor(remain / 10);
-				if( ch >= ten.quantity ){ 
-					result.push( [ 'TEN',ten.quantity*ten.value ] ); 
-				} 
-				remain = remain - ten.quantity*ten.value;
-				console.log(remain);
+		},
+		incursionist : function( c ){
+			if( c >= this['TWENTY'].value && this['TWENTY'].amount >= this['TWENTY'].value ){ 
+				this.changetoreturn.push( ['TWENTY',this['TWENTY'].value] );
+				this['TWENTY'].amount -= this['TWENTY'].value; this['TWENTY'].quantity -= 1;
+				c -= this['TWENTY'].value; 
+				this.incursionist( c );
+			}else if( c >= this['TEN'].value && this['TEN'].amount >= this['TEN'].value ){
+				this.changetoreturn.push( ['TEN',this['TEN'].value]);
+				this['TEN'].amount -= this['TEN'].value; this['TEN'].quantity -= 1;
+				c -= this['TEN'].value; 
+				this.incursionist( c );
+			}else if( c >= this['FIVE'].value && this['FIVE'].amount >= this['FIVE'].value ){
+				this.changetoreturn.push( ['FIVE',this['FIVE'].value]);
+				this['FIVE'].amount -= this['FIVE'].value; this['FIVE'].quantity -= 1;
+				c -= this['FIVE'].value; 
+				this.incursionist( c );
+			}
+			else{
+				console.log('C is Zero!');
 			}
 		}
-	return result;
-
-	}
-};
-function checkCashRegister(price, cash, cid) {
-  var change = cash - price;
-  var changeTotal = [];
+	};
+  
   // Here is your change, ma'am.
   var obj = cid.map( function( a ){
-  	/*var n = new Object();
-  	n.name = a[0],
-  	n.value = Moneys[ a[0] ] ;
-  	n.amount = a[1];*/
-  	//var n = Moneys[ a[0] ];
   	Moneys[ a[0] ].amount = a[1];
   	Moneys[ a[0] ].quantity = Math.round( Moneys[ a[0] ].amount / Moneys[ a[0] ].value );
-  	//console.log( Moneys[ a[0] ].quantity );
-
-  	//console.log( Moneys[ a[0] ] );
-  	//Moneys[ a[0] ]['amount'] = a[1];
-	return Moneys;
   } );
-/*
-  if( change > 100 ){
-  	if( Moneys['ONE HUNDRED'].quantity >= 1 ){ 
-  		let ch = Math.floor(change / 100); 
-  		if( ch >= Moneys['ONE HUNDRED'].quantity ){ 
-  			changeTotal.push( [ 'ONE HUNDRED',Moneys['ONE HUNDRED'].amount*Moneys['ONE HUNDRED'].value ] ); 
-  		}
-  	}else{ console.log( 'no 100'); }
-  }else if( change > 20 ){
-  	if( Moneys['TWENTY'].quantity >= 1 ){ 
-  		let ch = Math.floor(change / 20);
-  		if( ch >= Moneys['TWENTY'].quantity ){ 
-  			changeTotal.push( [ 'TWENTY',Moneys['TWENTY'].quantity*Moneys['TWENTY'].value ] ); 
-  		} 
-  	}else{ console.log( 'no 20'); }
-  }*/
-  //console.log( changeTotal );
-  console.log( Moneys.ret( change ) );
+  console.log( Moneys );
+  Moneys.incursionist( change );
+  console.log( Moneys.changetoreturn );
+  Moneys.totalChange();
   return Moneys;
 }
 
-
-
-/*
-var Money = function( n,c ){
-	this.name = n,
-	this.value = c,
-	this.amount = 0,
-	this.getValue = function(){
-		return this.value;
-	},
-	this.setValue = function( val ){
-		this.value = val
-	}
-}*/
-
-// Example cash-in-drawer array:
-// [["PENNY", 1.01], .01
-// ["NICKEL", 2.05], .05
-// ["DIME", 3.10], .10
-// ["QUARTER", 4.25], .25
-// ["ONE", 90.00], 1
-// ["FIVE", 55.00], 5
-// ["TEN", 20.00], 10
-// ["TWENTY", 60.00], 20
-// ["ONE HUNDRED", 100.00]] 100
 console.clear();
 console.time()
 console.log('---------------------');
