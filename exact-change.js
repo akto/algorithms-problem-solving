@@ -6,33 +6,31 @@ function checkCashRegister(price, cash, cid) {
 		'DIME' : { value : 0.1, amount : 0, quantity : 0 },
 		'QUARTER' :{ value : 0.25, amount : 0, quantity : 0 },
 		'ONE' : { value : 1, amount : 0, quantity : 0 },
-		'FIVE' : { value : 5, amount : 0, quantity : 0 },
-		'TEN' : { value : 10, amount : 0, quantity : 0 },
-		'TWENTY' : { value : 20, amount : 0, quantity : 0 },
+		'FIVE' : { value : 5, amount : 0, quantity : 0, cash : 0 },
+		'TEN' : { value : 10, amount : 0, quantity : 0, cash : 0 },
+		'TWENTY' : { value : 20, amount : 0, quantity : 0, cash : 0 },
 		'ONE HUNDRED' : { value : 100, amount : 0, quantity : 0 },
 		changetoreturn : [],
 		totalChange : function(  ){	
-			if( this.changetoreturn.length != 0 ){
-				this.changetoreturn.reduce(function( e,ce ){ 
-					if( e[0] == ce[0] ){ 
-						e[1] += ce[1]; 
-					}
-					console.log( e + '--' +ce) });
-			}
+			console.log( this['TWENTY'].cash);
 		},
 		incursionist : function( c ){
+
 			if( c >= this['TWENTY'].value && this['TWENTY'].amount >= this['TWENTY'].value ){ 
-				this.changetoreturn.push( ['TWENTY',this['TWENTY'].value] );
+				
+				this['TWENTY'].cash += 1;
 				this['TWENTY'].amount -= this['TWENTY'].value; this['TWENTY'].quantity -= 1;
 				c -= this['TWENTY'].value; 
 				this.incursionist( c );
 			}else if( c >= this['TEN'].value && this['TEN'].amount >= this['TEN'].value ){
-				this.changetoreturn.push( ['TEN',this['TEN'].value]);
+				
+				this['TEN'].cash += 1;
 				this['TEN'].amount -= this['TEN'].value; this['TEN'].quantity -= 1;
 				c -= this['TEN'].value; 
 				this.incursionist( c );
 			}else if( c >= this['FIVE'].value && this['FIVE'].amount >= this['FIVE'].value ){
-				this.changetoreturn.push( ['FIVE',this['FIVE'].value]);
+				
+				this['FIVE'].cash += 1;
 				this['FIVE'].amount -= this['FIVE'].value; this['FIVE'].quantity -= 1;
 				c -= this['FIVE'].value; 
 				this.incursionist( c );
@@ -50,8 +48,8 @@ function checkCashRegister(price, cash, cid) {
   } );
   console.log( Moneys );
   Moneys.incursionist( change );
-  console.log( Moneys.changetoreturn );
-  Moneys.totalChange();
+  
+  console.log( Moneys.totalChange() );
   return Moneys;
 }
 
