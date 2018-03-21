@@ -5,7 +5,16 @@ function updateInventory(arr1, arr2) {
     Reversing done!
     console.log( reverser( reverser( arr1 ).sort() ) );
     */
-    return arr1;
+    
+    arr2.map( function(i){
+        let reminder = 0;
+        arr1.map( function(j){     
+            if( j[1] == i[1] ){ j[0] += i[0]; reminder += 1; }
+        });
+        if( reminder == 0 ){ arr1.push( i ); }
+    });
+    //console.log( reverser( reverser( arr1 ).sort() ) );
+    return reverser( reverser( arr1 ).sort() );
 }
 
 /* Function that reverse all the elements which are also arrays, in an array*/
@@ -20,7 +29,7 @@ var curInv = [
     [2, "Dirty Sock"],
     [1, "Hair Pin"],
     [5, "Microphone"],
-    [21, "Fowling Ball"]
+    [21, "Bowling Ball"]
 ];
 
 var newInv = [
