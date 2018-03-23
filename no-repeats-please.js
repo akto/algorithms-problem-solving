@@ -1,6 +1,6 @@
 console.clear();
 function permAlone(str) {
-  console.log('test');
+  let splitIt = str.split('');
   return str;
 }
 
