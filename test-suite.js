@@ -12,3 +12,10 @@ function test( func,expected ){
   console.timeEnd('---End---: ');
   
 }
+
+test.prototype.render = function( arr ){
+  arr.map( function(e){
+    let renderFunc = e[0];
+    let renderExpected = e[1];
+  });
+}

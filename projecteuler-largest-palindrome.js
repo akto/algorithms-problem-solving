@@ -3,6 +3,9 @@ largestPalindrome( firstNumber, SecondNumber, initialValueFor1stNumber, initialV
 to check the largest palindrome number between firstNumber and secondNumber 
 need to specify initial values for both numbers
 if these initial values is close to number then it takes less execution time
+
+#you can give initial values by yourself. NO NEED of initial values.
+
 */
 function largestPalindrome( b,c,k,l ){
     var i,j,
