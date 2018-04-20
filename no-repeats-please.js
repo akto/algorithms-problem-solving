@@ -1,7 +1,19 @@
 console.clear();
 function permAlone(str) {
-  let splitIt = str.split('');
-  return str;
+  var splittedStr = str.split('');
+  var temp,res = [];
+  splittedStr.map(function( el ){
+    if( temp.length === 0 ){ temp.push( new Array(el) ); }
+    else{
+      var i = 0;
+      while( i == temp.length ){
+        temp.push( new Array(el) );
+        i++;
+      }
+      console.log( temp );
+    }
+  });
+  console.log( temp );
 }
 
 function isNextSame( str ){
@@ -30,7 +42,7 @@ function test( func,expected ){
   else if( expected == 'array' ){ result = Array.isArray( output );}
   else if( expected == 'object' ){ result = typeof output == 'object' ? true : false; }
   else{ result = (output == expected) ;}
-  console.log('---Start---');
+  console.log('\n ---Start---');
   console.time('---End---: ');
   func;
   console.log( 'Output is: '+output + ' and Expected: ' + expected + ' so Result is: '+ result);
