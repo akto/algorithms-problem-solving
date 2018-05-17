@@ -1,31 +1,35 @@
 console.clear();
 var Person = function(firstAndLast) {
     // Complete the method below and implement the others similarly
-    this.explodeName = firstAndLast.split(' ');
-    this.firstName = this.explodeName[0];
-    this.lastName = this.explodeName[1];
-    this.getFullName = function() {
-        return this.firstName+' '+this.lastName;;
+    
+    var explodeName = firstAndLast.split(' '),
+    firstName = explodeName[0],
+    lastName = explodeName[1];
+    
+    this.getFullName = function() {    
+        return firstName+' '+lastName;
     };
     this.getFirstName = function(){
-        return firstAndLast.split(' ')[0];
+        return firstName;
     };
     this.getLastName = function(){
-        return firstAndLast.split(' ')[1];
+        return lastName;
     };
     this.setFirstName = function(fName){
-        this.firstName = fName;
+        firstName = fName;
     };
     this.setLastName = function(lName){
-        this.lastName = lName;
+        lastName = lName;
     };
     this.setFullName = function( fuName ){
-        this.fullName = fuName;
+        let f = fuName.split(' ');
+        firstName = f[0];
+        lastName = f[1];
     };
 };
 
 var bob = new Person('Bob Ross');
-bob.getFullName();
+console.log( bob.getFullName() );
 console.log( Object.keys(bob).length ); //should return 6.
 console.log( bob instanceof Person ); //should return true.
 console.log( bob.firstName ); //should return undefined.
