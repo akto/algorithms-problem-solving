@@ -43,7 +43,8 @@ My solutions to some easy to complex problems and challanges. Check out my [codi
 38. [`validate-us-phone-numbers.js`](https://github.com/akto/algorithms-problem-solving/blob/master/validate-us-phone-numbers.js) - JS code to validate US phone number formats!
 39. [`record-collection.js`](https://github.com/akto/algorithms-problem-solving/blob/master/record-collection.js) - JS code to iterate throught object properties and methods.
 40. [`symmetric-difference.js`](https://github.com/akto/algorithms-problem-solving/blob/master/symmetric-difference.js) - JS code to find symmetric difference of the arrays.
-41. [`exact-change.js`](https://github.com/akto/algorithms-problem-solving/blob/master/exact-change.js) - NOT FINISHED
+41. [`exact-change.js`](https://github.com/akto/algorithms-problem-solving/blob/master/exact-change.js) - (?)
+42. [`positive-integers-squared.js`](https://github.com/akto/algorithms-problem-solving/blob/master/positive-integers-squared.js) - JS code to find squares of only integers values from inside real numbers array. ( Used arrow functions and function chain. )
 
 
 ## Adventofcode.com challanges
