@@ -9,3 +9,5 @@ function factorialize(num) {
 }
 
 factorialize(5);
+
+const factorial = n => n == 1 ? n : n*fact(n-1);
