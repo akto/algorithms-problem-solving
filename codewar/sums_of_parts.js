@@ -6,7 +6,8 @@
     Performance could be lay in the plain old js.
 */
 function partsSums(ls) {
-  let finalNumber = 0,newArray = [0],lengthArr = ls.length;
+  let finalNumber = 0,newArray = [0],
+      lengthArr = ls.length;
   for(let i = lengthArr-1; i >= 0;i--){
     finalNumber += ls[i];
     ls[i] = finalNumber;
